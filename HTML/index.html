@@ -28,30 +28,31 @@
 
 			<div class="card-back">
 				<img src="/SRC/bg-card-back.png" alt=" display card back">
-				<p class="cvc-display">0000</p>
+				<p class="cvc-display">000</p>
 			</div>
 		</section>
 
 		<section class="card-details">
 			<form itemref="myForm" action="/action_page.php" name="myForm">
-				<label for="cardholder-name"> CARDHOLDER NAME</label>
-				<input id="cardholder-name" type="text" name="cardholder-name" placeholder="John Does" oninput="inputName()">
+				<label for="cardholder-name">CARDHOLDER NAME</label>
+				<input id="cardholder-name" type="text" name="cardholder-name" placeholder="John Does"
+					oninput="inputName()" />
 				<p id="msgError"></p>
-				
-				<label class="card-number" for="card-number"> CARD NUMBER</label>
-				<input id="card-number" class="card-number" type="number" name="card-number" placeholder="1234 5678 9123 0000"
-					oninput="inputCardNum()">
+
+				<label class="card-number" for="card-number">CARD NUMBER</label>
+				<input id="card-number" class="card-number" type="number" name="card-number"
+					placeholder="1234 5678 9123 0000" oninput="inputCardNum()" />
 				<p id="card-num-error"></p>
 
 				<div class="flex">
 					<label class="expiry-date" for="expiry-date">EXP. DATE (MM/YYYY)<br />
-						<input class="expiry" type="number" name="expiry-date" placeholder="MM" oninput="inputMM()">
-						<input class="expiry" type="text" name="expiry-date" placeholder="YYYY" oninput="inputYY()">
+						<input class="expiry" type="number" name="expiry-date" placeholder="MM" oninput="inputMM()" />
+						<input class="expiry" type="text" name="expiry-date" placeholder="YYYY" oninput="inputYY()" />
 						<p class="expiry-error"></p>
 					</label>
 
 					<label class="cvc" for="cvc">CVC<br />
-						<input class="cvc" type="number" id="cvc" name="cvc" placeholder="123" oninput="inputCvc()">
+						<input class="cvc" type="number" id="cvc" name="cvc" placeholder="123" oninput="inputCvc()" />
 						<p id="cvc-error"></p>
 					</label>
 				</div>
@@ -66,7 +67,7 @@
 			</div>
 		</section>
 	</div>
-	<script scr="/script.js"></script>
+	<script scr="script.js"></script>
 </body>
 
 </html>

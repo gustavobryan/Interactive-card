@@ -25,7 +25,7 @@ body {
 .bg-main {
     position: absolute;
     width: 40%;
-    height: 100vh;
+    height: 100%;
 }
 
 .bg-mobile {
@@ -34,7 +34,7 @@ body {
 
 .container {
     max-width: 1440px;
-    width: 100vh;
+    width: 100%;
     margin: auto;
 }
 
@@ -54,6 +54,7 @@ section .card-details {
     float: right;
 }
 
+/*            CARD STYLING                */
 
 .card-front,
 .card-back {
@@ -122,7 +123,7 @@ section .card-details {
 
 .expiry-year-display {
     bottom: 30px;
-    right: 60px;
+    right: 30px;
     font-size: 0.9em;
 }
 
@@ -272,6 +273,342 @@ button#continue {
 
 .hidden {
     display: none;
+}
+
+/*             MEDIA QUERIES 2560px              */
+
+@media screen and (min-width: 2560px) {
+    .card-front {
+        left: 28.5%;
+        top: 33%;
+    }
+
+    .card-back {
+        left: 31%;
+        bottom: 33%;
+    }
+
+    form {
+        top: 38px;
+        right: 33%;
+    }
+
+    .thank-you {
+        right: 33%;
+    }
+}
+
+/*             MEDIA QUERIES 1440px              */
+
+@media screen and (max-width: 1440px) {
+    .card-front {
+        left: 19%;
+        top: 20%;
+    }
+
+    .card-back {
+        left: 25%;
+        bottom: 20%;
+    }
+
+    form {
+        right: 15%;
+        top: 30%;
+    }
+
+    .thank-you {
+        right: 15%;
+        top: 33%;
+    }
+}
+
+/*             MEDIA QUERIES 1366PX              */
+
+@media screen and (max-width: 1366px) {
+    .card-front {
+        left: 17%;
+        top: 18%;
+    }
+
+    .card-back {
+        left: 23%;
+        bottom: 16%;
+    }
+
+    form {
+        right: 200px;
+        top: 200px;
+    }
+}
+
+/*             MEDIA QUERIES 1024px              */
+
+@media screen and (max-width: 1024px) {
+    .bg-main {
+        width: 35%;
+    }
+
+    .card-front {
+        left: 6%;
+        top: 20%;
+    }
+
+    .card-back {
+        left: 12%;
+        bottom: 20%;
+    }
+
+    form {
+        right: 6%;
+    }
+
+    .thank-you {
+        right: 6%;
+    }
+}
+
+/*             MEDIA QUERIES 768px  TABLETS AND BELOW            */
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .bg-main {
+        display: none;
+    }
+
+    .bg-mobile {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 300px;
+    }
+
+    .card-front {
+        left: 80px;
+        top: 130px;
+        z-index: 5;
+    }
+
+    .card-back {
+        left: 300px;
+        top: 50px;
+    }
+
+    .card-back-img,
+    .card-front-img {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .cvc-display {
+        top: 97px;
+        bottom: 0;
+        right: 45px;
+    }
+
+    section .card-details {
+        position: relative;
+        flex: 0 1 50%;
+    }
+
+    form {
+        right: 200px;
+        top: 0;
+    }
+
+    .flex .expiry {
+        flex: 0 1 auto;
+        width: 40%;
+    }
+
+    .flex .cvc {
+        flex: 1 0 50px;
+        justify-self: end;
+        align-self: flex-end;
+    }
+}
+
+/*             MEDIA QUERIES 425px     SMARTPHONES         */
+
+@media screen and (max-width: 425px) {
+    .bg-mobile- {
+        height: 250px;
+    }
+
+    .card-back-img,
+    .card-front-img {
+        max-width: 300px;
+    }
+
+    .card-front {
+        left: 125px;
+        top: 30px;
+    }
+
+    .card-back {
+        left: 90px;
+        top: 30px;
+    }
+
+    .card-number-display {
+        font-size: 14px;
+        bottom: 60px;
+        letter-spacing: 4px;
+    }
+
+    .cardholder-display {
+        font-size: 12px;
+    }
+
+    .expiry-month-display,
+    .expiry-divider-display,
+    .expiry-year-display {
+        font-size: 12px;
+    }
+
+    .expiry-year-display {
+        right: 38px;
+    }
+
+    .cvc-display {
+        top: 75px;
+        bottom: unset;
+        right: 38px;
+    }
+
+    section .card-details {
+        position: relative;
+        flex: 0 1 65%;
+    }
+
+    form {
+        right: 35px;
+    }
+}
+
+/*             MEDIA QUERIES 375px     SMARTPHONES         */
+
+@media screen and (max-width: 375px) {
+    .card-back {
+        left: 60px;
+    }
+
+    .card-front {
+        left: 20px;
+    }
+
+    .card-logo {
+        width: 20%;
+        top: 20px;
+    }
+
+    form {
+        right: 10px;
+    }
+}
+
+/*             MEDIA QUERIES 320px     SMARTPHONES         */
+
+@media screen and (max-width: 320px) {
+    .bg-main {
+        height: 200px;
+    }
+
+    .card-back {
+        top: unset;
+        bottom: 610px;
+        left: 50%;
+    }
+
+    .card-front {
+        top: 100px;
+    }
+
+    .card-back-img,
+    .card-front-img {
+        max-width: 250px;
+    }
+
+    form {
+        max-width: 250px;
+        right: 30px;
+        top: -50px;
+    }
+
+    input {
+        max-width: 250px;
+    }
+
+    .cvc-display {
+        top: 60px;
+        right: 30px;
+    }
+
+    .card-logo {
+        top: 20px;
+        width: 20%;
+    }
+
+    .card-number-display {
+        font-size: 12px;
+        bottom: 40px;
+    }
+
+    .cardholder-display,
+    .expiry-year-display,
+    .expiry-divider-display,
+    .expiry-month-display {
+        font-size: 9px;
+    }
+
+    .cardholder-display {
+        bottom: 20px;
+    }
+
+    .expiry-divider-display {
+        right: 65px;
+        bottom: 20px;
+    }
+
+    .expiry-month-display {
+        right: 72px;
+        bottom: 20px;
+    }
+
+    .expiry-year-display {
+        bottom: 20px;
+    }
+
+    section .card-details {
+        position: relative;
+        flex: 0 1 80%;
+    }
+
+    .flex {
+        gap: 0;
+    }
+
+    .flex .expiry {
+        flex: 0 1 auto;
+        width: 40%;
+    }
+
+    .flex .cvc {
+        flex: 1 0 70px;
+        width: 70px;
+        justify-self: end;
+        align-self: flex-end;
+    }
+
+    label {
+        font-size: 12px;
+    }
 }
 
 
