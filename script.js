@@ -61,7 +61,7 @@ function inputYY() {
 }
 function inputCvc() {
     let formattedCvc = cvc.value;
-    
+
     formattedCvc = formattedCvc.substring(0, 3);
     cvc.value = formattedCvc;
     if (cvc.value === "") {

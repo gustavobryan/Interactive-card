@@ -8,10 +8,10 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Space Grotesk", sans-serif;
-    box-sizing: border-box;
 }
 
 body {
@@ -42,14 +42,14 @@ section {
     border: var(--debug-red);
 }
 
-section .card-display {
+section.card-display {
     flex: 0 1 600px;
     color: hsl(0, 0%, 100%);
     border: var(--debug-blue);
     float: left;
 }
 
-section .card-details {
+section.card-details {
     border: var(--debug-green);
     float: right;
 }
@@ -93,7 +93,6 @@ section .card-details {
     left: 30px;
     z-index: 3;
 }
-
 
 .card-number-display {
     bottom: 80px;
@@ -144,15 +143,15 @@ form {
 
 label {
     display: block;
-    font-size: 14;
+    font-size: 14px;
     font-weight: 500;
     margin-bottom: 5px;
     letter-spacing: 2px;
 }
 
-label .card-number,
-label .expiry-date,
-label .cvc {
+label.card-number,
+label.expiry-date,
+label.cvc {
     margin-top: 30px;
 }
 
@@ -211,8 +210,8 @@ p#error-cvc {
     width: 135px;
 }
 
-input .expiry,
-input .cvc {
+input.expiry,
+input.cvc {
     margin-top: 5px;
 }
 
@@ -249,6 +248,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .thank-you img {
@@ -412,7 +412,7 @@ button#continue {
         right: 45px;
     }
 
-    section .card-details {
+    section.card-details {
         position: relative;
         flex: 0 1 50%;
     }
@@ -437,7 +437,7 @@ button#continue {
 /*             MEDIA QUERIES 425px     SMARTPHONES         */
 
 @media screen and (max-width: 425px) {
-    .bg-mobile- {
+    .bg-mobile {
         height: 250px;
     }
 
@@ -476,13 +476,17 @@ button#continue {
         right: 38px;
     }
 
+    p.cvc-display {
+        font-size: 12px;
+    }
+
     .cvc-display {
         top: 75px;
         bottom: unset;
         right: 38px;
     }
 
-    section .card-details {
+    section.card-details {
         position: relative;
         flex: 0 1 65%;
     }
@@ -516,7 +520,7 @@ button#continue {
 /*             MEDIA QUERIES 320px     SMARTPHONES         */
 
 @media screen and (max-width: 320px) {
-    .bg-main {
+    .bg-mobile {
         height: 200px;
     }
 

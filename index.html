@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="/SRC/favicon-32x32.png">
+	<link rel="icon" type="image/png" href="/SRC/favicon-32x32.png">
 	<link rel="stylesheet" href="style.css">
 
 	<title>Card Interactive</title>
@@ -35,52 +35,26 @@
 		</section>
 
 		<section class="card-details">
-			<form id="myForm" action="/action_page.php" name="myForm">
-				<label for="cardholder-name">CARDHOLDER NAME</label>
-				<input 
-				id="cardholder-name" 
-				class="cardholder-name" 
-				type="text" 
-				name="cardholder-name"
-				placeholder="John Does" 
-				oninput="inputName()" />
+			<form id="myForm" name="myForm">
+				<label for="cardholder-name"> CARDHOLDER NAME</label>
+				<input id="cardholder-name" class="cardholder-name" type="text" name="cardholder-name"
+					placeholder="John Does" oninput="inputName()" />
 				<p id="msgError"></p>
 
 				<label class="card-number" for="card-number">CARD NUMBER</label>
-				<input 
-				id="card-number" 
-				class="card-number" 
-				type="text" 
-				name="card-number" 
-				placeholder="1234 5678 9123 0000"
-				oninput="inputCardNum()" />
+				<input id="card-number" class="card-number" type="text" name="card-number" placeholder="1234 5678 9123 0000"
+					oninput="inputCardNum()" />
 				<p id="card-num-error"></p>
 
 				<div class="flex">
 					<label class="expiry-date" for="expiry-date">EXP. DATE (MM/YYYY)<br />
-						<input 
-						class="expiry" 
-						type="text" 
-						name="expiry-date" 
-						placeholder="MM" 
-						oninput="inputMM()"/>
-						<input 
-						class="expiry" 
-						type="text" 
-						name="expiry-date" 
-						placeholder="YYYY" 
-						oninput="inputYY()"/>
+						<input class="expiry" type="text" name="expiry-date" placeholder="MM" oninput="inputMM()" />
+						<input class="expiry" type="text" name="expiry-date" placeholder="YYYY" oninput="inputYY()" />
 						<p class="expiry-error"></p>
 					</label>
 
 					<label class="cvc" for="cvc">CVC<br />
-						<input 
-						class="cvc" 
-						type="text" 
-						id="cvc" 
-						name="cvc" 
-						placeholder="123" 
-						oninput="inputCvc()" />
+						<input class="cvc" type="text" id="cvc" name="cvc" placeholder="123" oninput="inputCvc()" />
 						<p id="cvc-error"></p>
 					</label>
 				</div>
@@ -95,7 +69,7 @@
 			</div>
 		</section>
 	</div>
-	<script scr="script.js"></script>
+	<script src="/script.js"></script>
 </body>
 
 </html>
