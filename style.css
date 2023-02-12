@@ -58,7 +58,7 @@ section.card-details {
 .card-front,
 .card-back {
   position: absolute;
-  width: fit-content;
+  width: ;
 }
 
 .card-front-img,
@@ -69,12 +69,12 @@ section.card-details {
 
 .card-front {
   left: 470px;
-  top: 25%;
+  top: 15%;
 }
 
 .card-back {
   left: 540px;
-  bottom: 25%;
+  bottom: 15%;
 }
 
 .card-logo,
@@ -296,11 +296,11 @@ button#continue {
 @media screen and (max-width: 1440px) {
   .card-front {
     left: 19%;
-    top: 20%;
+    top: 10%;
   }
   .card-back {
     left: 25%;
-    bottom: 20%;
+    bottom: 10%;
   }
   form {
     right: 15%;
@@ -451,7 +451,7 @@ button#continue {
     flex: 0 1 65%;
   }
   form {
-    right: 35px;
+    right: 10px;
   }
 }
 
@@ -468,7 +468,7 @@ button#continue {
     top: 20px;
   }
   form {
-    right: 10px;
+    right: 15px;
   }
 }
 
