@@ -58,7 +58,7 @@ section.card-details {
 .card-front,
 .card-back {
   position: absolute;
-  width: ;
+  width: fit-content;
 }
 
 .card-front-img,
