@@ -14,8 +14,6 @@ const continueBtn = document.getElementById("continue");
 const form = document.getElementById("myForm");
 const expiryErrorMsg = document.getElementById("expiry-error");
 
-//teste;
-
 function inputName() {
     nameOnCard.innerHTML = cardholder.value;
     thankYou.innerHTML = `Thank You ${cardholder.value}`;
@@ -74,7 +72,7 @@ function inputCvc() {
 function massValidate() {
     function validateName() {
         let cardholderExp = /^[A-Z a-z]+$/;
-        let errorMsg = document.getElementById("msgError");
+        let errorMsg = document.getElementById("errorMsg");
         if (cardholder.value.match(cardholderExp)) {
             errorMsg.textContent = "";
         } else {
@@ -109,7 +107,7 @@ function massValidate() {
         }
     }
     function validateCvc() {
-        let cvcErrorMsg = document.getElementById("cvc-error");
+        let cvcErrorMsg = document.getElementById("error-cvc");
         let cvcExp = /^[0-9]{3}$/;
         if (cvc.value === "") {
             cvcErrorMsg.innerHTML = "Can't be blank";
@@ -136,8 +134,7 @@ function massValidate() {
         return true;
     }
 }
-
-//submit button
+// Submit Button
 
 submit.addEventListener("click", event => {
     massValidate();
@@ -150,8 +147,7 @@ submit.addEventListener("click", event => {
         thankYouSection.classList.remove("hidden");
     }
 });
-
-// continue button
+// Continue Button
 
 continueBtn.addEventListener("click", event => {
     event.preventDefault();
